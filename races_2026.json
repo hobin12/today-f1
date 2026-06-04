@@ -1,0 +1,16 @@
+[
+  {
+    "id": "bahrain",
+    "name": "Bahrain GP",
+    "circuit": "Bahrain International Circuit",
+    "date": "2026-03-08T15:00:00Z",
+    "hasSprint": false
+  },
+  {
+    "id": "japan",
+    "name": "Japan GP",
+    "circuit": "Suzuka Circuit",
+    "date": "2026-03-22T06:00:00Z",
+    "hasSprint": true
+  }
+]
