@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>오늘의 F1</title>
+
+<style>
+body{
+    background:#111;
+    color:white;
+    font-family:Arial,sans-serif;
+    text-align:center;
+    padding:30px;
+}
+
+h1{
+    color:#e10600;
+}
+
+.card{
+    max-width:600px;
+    margin:auto;
+    background:#222;
+    padding:20px;
+    border-radius:15px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>🏎️ 오늘의 F1</h1>
+
+<div class="card">
+<h2>다음 그랑프리</h2>
+<p>일본 GP</p>
+
+<h2>남은 시간</h2>
+<p id="countdown"></p>
+</div>
+
+<script>
+const raceDate = new Date("2026-04-05T14:00:00+09:00");
+
+function updateCountdown(){
+    const now = new Date();
+    const diff = raceDate - now;
+
+    const days = Math.floor(diff/(1000*60*60*24));
+    const hours = Math.floor((diff/(1000*60*60))%24);
+
+    document.getElementById("countdown").innerHTML =
+    `${days}일 ${hours}시간`;
+}
+
+updateCountdown();
+setInterval(updateCountdown,1000);
+</script>
+
+</body>
+</html>
