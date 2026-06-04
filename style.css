@@ -1,0 +1,53 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #0b0b0f;
+  color: white;
+  margin: 0;
+}
+
+.container {
+  padding: 20px;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: #15151e;
+  border-radius: 12px;
+}
+
+#countdown {
+  font-size: 32px;
+  margin-top: 10px;
+  color: #ff3b3b;
+}
+
+/* 4x6 그리드 */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-top: 20px;
+}
+
+/* 카드 */
+.race-card {
+  background: #1c1c28;
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.race-card:hover {
+  transform: scale(1.05);
+  background: #2a2a3a;
+}
+
+#detail {
+  margin-top: 30px;
+  background: #15151e;
+  padding: 15px;
+  border-radius: 10px;
+}
